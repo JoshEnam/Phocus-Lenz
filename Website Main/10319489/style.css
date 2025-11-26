@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+  color: #222;
+}
+
+p {
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* --- Myself Page Theme --- */
+.myself-theme {
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  color: #004d40;
+}
+
+.myself-theme h1 {
+  color: #00796b;
+}
+
+.myself-theme p {
+  background: rgba(0, 121, 107, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* --- School Page Theme --- */
+.school-theme {
+  background: linear-gradient(135deg, #fff3e0, #ffffff);
+  color: #e65100;
+}
+
+.school-theme h1 {
+  color: #bf360c;
+}
+
+.school-theme iframe {
+  border: 3px solid #e65100;
+  border-radius: 8px;
+}
+
+/* --- Brand Page Theme (Phocus Lenz) --- */
+.brand-theme {
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.85);
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+}
+
+.navbar .logo {
+  color: goldenrod;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: goldenrod;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+  background: #FFD700;
+  color: #000;
+}
+
+/* Hero Section */
+.hero {
+  height: 70vh;
+  background: url('your-photo-placeholder.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-text h2 {
+  font-size: 3em;
+  color: gold;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+
+.hero-text p {
+  font-size: 1.3em;
+  color: #f0e68c;
+  margin-top: 10px;
+}
+footer{
+  text-align: center;
+  padding: 15px;
+  background: rgba(0,0,0,0.85);
+  color: goldenrod;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+p{
+  color: #f0e68c;
+}
+h2{
+  color: burlywood;
+  color-scheme: inherit;
+}
+.gallery-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}

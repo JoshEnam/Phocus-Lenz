@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About me</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(to right, #000000, #434343);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 32px;
+      font-family: 'Courier New', Courier, monospace;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      color: white;
+      text-align: center;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero h1 {
+      position: relative;
+      font-size: 48px;
+      font-family: 'Courier New', Courier, monospace;
+      z-index: 1;
+      margin: 0;
+    }
+
+    .content {
+      padding: 30px;
+      text-align: center;
+    }
+
+    .media-section {
+      margin-top: 30px;
+    }
+
+    .media-section video {
+      width: 600px;
+      height: 600px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    .media-section img {
+      width: 600px;
+      height: 600px;
+      border: 3px solid #333;
+      margin: 0 auto 20px;
+      display: block;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 14px;
+    }
+  </style>
+    <nav class="navbar">
+      <h1 class="logo">Phocus Lenz 📸</h1>
+        <a href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+  <body>
+    <h1 style="color: rgb(11, 11, 165);" align="center">About Me</h1>
+    <center>
+    <img style="border-radius:40px ;" src="media/myPic.png.jpg" alt="Joshua Enam" align="center" width="100" />
+    </center>
+    <p align="center"> <font face="Courier" size="3"><b>
+      Hello👋, I am Joshua Enam Agbesi. A student of the University Of Professional Studies, Accra <span style="color: blue;">(UPSA)</span>, currently pursuing a degree in the BSc. Information Technology.
+      My ambition is to become a tech-savvy business strategist who drives innovation and growth. 
+      Academically, I aim to excel in business management while gaining practical IT skills that complement my leadership and problem-solving abilities.
+       I'm motivated by the need to create sustainable solutions for local businesses and empower youth through digital literacy.
+        Through this degree, I hope to build a strong foundation for a career in marketing and entrepreneurship, while contributing meaningfully to my community.
+   </b> </font></p>
+  </body>
+</html>
